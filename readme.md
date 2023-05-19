@@ -56,7 +56,7 @@ Aşağıda istenilen sonuçlara ulaşabilmek için gerekli SQL sorgularını alt
 
     8) Öğrenci tablosundaki öğrencinin adını ve soyadını birleştirip, adsoyad olarak listeleyiniz. (concat, as kullanım örneği)
 
-    select CONCAT(ograd ,ogrsoyad) as "ad-soyad" from ogrenci
+    	select CONCAT(ograd ,ogrsoyad) as "ad-soyad" from ogrenci
 
     9) Öğrenci tablosundaki Adı ‘A’ harfi ile başlayan öğrencileri listeleyiniz.
 
@@ -76,23 +76,23 @@ Aşağıda istenilen sonuçlara ulaşabilmek için gerekli SQL sorgularını alt
 
     13) Öğrenci tablosundaki sınıfı 9A olan Erkekleri veya sınıfı 9B olan kızların adını, soyadını, sınıfını ve cinsiyetini listeleyiniz.
 
-select ograd ,ogrsoyad from ogrenci WHERE (sinif="9A" and cinsiyet= "E") or (sinif="9B" and cinsiyet="k")
+    	select ograd ,ogrsoyad from ogrenci WHERE (sinif="9A" and cinsiyet= "E") or (sinif="9B" and cinsiyet="k")
 
     14) Sınıfı 10A veya 10B olan erkekleri listeleyiniz.
 
-select ograd ,ogrsoyad from ogrenci WHERE (cinsiyet ="E") AND (sinif="10A" or sinif = "10B")
+    	select ograd ,ogrsoyad from ogrenci WHERE (cinsiyet ="E") AND (sinif="10A" or sinif = "10B")
 
     15) Öğrenci tablosunda doğum yılı 1989 olan öğrencileri listeleyiniz.
 
-select ograd ,ogrsoyad from ogrenci WHERE dtarih LIKE "%1989%"
+    	select ograd ,ogrsoyad from ogrenci WHERE dtarih LIKE "%1989%"
 
     16) Öğrenci numarası 30 ile 50 arasında olan Kız öğrencileri listeleyiniz.
 
-select ograd ,ogrsoyad from ogrenci WHERE (cinsiyet = "K") and ogrno BETWEEN "30" and "50"
+    	select ograd ,ogrsoyad from ogrenci WHERE (cinsiyet = "K") and ogrno BETWEEN "30" and "50"
 
     17) Öğrencileri adına göre sıralayınız (alfabetik).
 
-select ograd,ogrsoyad from ogrenci order by ograd asc
+    	select ograd,ogrsoyad from ogrenci order by ograd asc
 
     18) Öğrencileri adına, adı aynı olanlarıda soyadlarına göre sıralayınız.
 
